@@ -4,10 +4,10 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-//     const apiKey = '4ce46aa4f79a4ea4a90ddd5a6c64463f'; 
-// const apiUrl = `https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`;
+    const apiKey = '4ce46aa4f79a4ea4a90ddd5a6c64463f'; 
+const apiUrl = `https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`;
 
-fetch('/api/location')
+fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
