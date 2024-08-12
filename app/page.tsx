@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 
+
 export default function Home() {
   useEffect(() => {
     const apiKey = '4ce46aa4f79a4ea4a90ddd5a6c64463f'; 
@@ -16,6 +17,7 @@ fetch(apiUrl)
   })
   .then(data => {
     console.log(data);
+    alert(JSON.stringify(data))
    
   })
   .catch(error => {
